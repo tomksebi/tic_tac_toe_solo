@@ -26,8 +26,8 @@ function playerMove(e) {
   const index = e.target.dataset.index;
   if (boardState[index] || isGameOver) return;
 
-  boardState[index] = "X";
-  cells[index].textContent = "X";
+  boardState[index] = "⚡";
+  cells[index].textContent = "⚡";
   if (checkGameEnd()) return;
 
   setTimeout(aiMove, 500);
